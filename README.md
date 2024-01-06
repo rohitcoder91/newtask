@@ -6,8 +6,6 @@
   - [Installation](#installation)
 - [Usage](#usage)
   - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
@@ -26,3 +24,41 @@ Make sure you have the following software installed on your machine:
 
    ```bash
    https://github.com/rohitcoder91/newtask.git)https://github.com/rohitcoder91/newtask.git
+
+2. cd expense-sharing-app
+3. pip install -r requirements.txt
+4. apply migration
+  python manage.py migrate
+5. run devlopement server -  python manage.py runserver
+
+### Usage
+### API Endpoints
+The application provides the following API endpoints:
+
+Add Expense
+
+Endpoint: /api/add_expense/
+Method: POST
+Data:
+json
+Copy code
+{
+  "payer_id": 1,
+  "amount": 1000,
+  "split_type": "EQUAL",
+  "participants_ids": [2, 3, 4]
+}
+Show Balances
+
+Endpoint: /api/show_balances/
+Method: GET
+Data:
+json
+Copy code
+{
+  "user_id": 1
+}
+
+
+
+
