@@ -1,0 +1,12 @@
+<!-- templates/weekly_balance_email.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Balance Summary</title>
+</head>
+<body>
+    <p>Hello {{ user.name }},</p>
+    <p>Here is your weekly balance summary. You are owed a total of {{ total_owed }}.</p>
+    <p>Thank you
